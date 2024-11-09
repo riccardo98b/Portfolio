@@ -1,0 +1,84 @@
+// Regole ulteriori scss, verranno convertite in css
+
+/*++++++++++++ REGOLE HEADER +++++++++++++++++++++++*/
+.header {
+  background: #151515 url(../images/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+// elemento overlay creo ghotst element con ::after
+//in alto a sinistra
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+// ora text-container sta sopra elementoo overlay
+.header .text-container {
+  z-index: 10;
+}
+
+.header .roles {
+  font-family: "lora-regular", serif;
+}
+
+.header .social {
+  bottom: 50px;
+}
+
+/*+++++++++++++++SEZIONE ABOUT ++++++++++++++++++*/
+.about-img {
+  width: 200px;
+}
+
+/*++++++++++++++++++++SEZIONE PROGETTI+++++++++++++*/
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+/*++++++++++++++++++++BOTTONE TORNA SU+++++++++++++*/
+.scroll-to-top {
+  bottom: 20px;
+  right: 10px;
+  display: none;
+}
+
+/*+++++++++++++++HOVER ICONE+++++++++++++*/
+
+.hovered:hover {
+  color: #cc005f;
+  opacity: 0.8;
+}
+
+/*++++++++++++++MEDIA QUERIES+++++++++++*/
+// HEADER
+@media (max-width: 767px) {
+  .header .social {
+    font-size: 30px;
+    bottom: 10px;
+  }
+
+  .technologies {
+    display: none;
+  }
+
+  .scroll-to-top {
+    right: 10px;
+  }
+
+  .header .roles {
+    font-size: 18px !important;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+}
