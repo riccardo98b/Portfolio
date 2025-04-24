@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <!-- Sezione Portfolio -->
+    <!-- Carosello: Sezione Portfolio -->
     <section class="portfolio py-5 bg-light">
       <div class="container">
         <div class="text-center mb-5">
@@ -99,32 +99,66 @@
           <hr class="w-25 mx-auto" />
           <h2 class="mb-4">Guarda i miei progetti</h2>
         </div>
-        <div class="row">
-          <div class="col-md-12 mb-4">
-            <div class="images project shadow-lg rounded-5">
-              <a
-                href="images/progettoReportTrackerBelloniRiccardo.png"
-                data-lightbox="images"
-                data-title="Report Tracker"
-              >
-                <img
-                  src="images/progettoReportTrackerBelloniRiccardo.png"
-                  alt="Report Tracker"
-                  class="img-fluid rounded-3 mx-auto"
-                />
-              </a>
+
+        <div
+          id="portfolioCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img
+                src="images/progettoReportTrackerBelloniRiccardo.png"
+                class="d-block mx-auto img-fluid rounded-4 shadow"
+                alt="Report Tracker"
+              />
+              <div class="mt-3">
+                <a
+                  href="https://github.com/riccardo98b/ReportTracker"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  Vai al progetto su GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item text-center">
+              <img
+                src="images/Betadisk.png"
+                class="d-block mx-auto img-fluid rounded-4 shadow"
+                alt="Altro Progetto"
+              />
+              <div class="mt-3">
+                <a
+                  href="https://github.com/riccardo98b/BetaDiskFrontEnd"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                >
+                  Vai al progetto su GitHub
+                </a>
+              </div>
             </div>
           </div>
 
-          <a
-            href="https://github.com/riccardo98b/ReportTracker"
-            class="text-decoration-none"
-            target="_blank"
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="prev"
           >
-            <h3 class="d-flex justify-content-center align-items-center">
-              Link Github Progetto Report Tracker
-            </h3>
-          </a>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#portfolioCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
         </div>
       </div>
     </section>
